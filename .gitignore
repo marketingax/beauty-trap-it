@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage
+
+# Production
+dist/
+dist-wp/
+*.zip
+
+# Misc
+.DS_Store
+*.pem
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+build-wp.ps1
+make-wp-zip.mjs
+wp-functions.php
+wp-style.css
+BEAUTY_TRAP_IT_MASTER_KB.md

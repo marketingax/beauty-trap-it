@@ -1,0 +1,117 @@
+[
+    {
+        "category": "Precision Cuts",
+        "services": [
+            {
+                "name": "Designer Cut",
+                "price": "$35",
+                "time": "45 min"
+            },
+            {
+                "name": "Trim",
+                "price": "$20",
+                "time": "30 min"
+            },
+            {
+                "name": "Cut & Style Relaxed Hair",
+                "price": "$45",
+                "time": "1h"
+            }
+        ]
+    },
+    {
+        "category": "Signature Sew-ins",
+        "services": [
+            {
+                "name": "Basic Sew-in",
+                "price": "$85",
+                "time": "2h 30min"
+            },
+            {
+                "name": "Bob Sew-in w/ Leave Out",
+                "price": "$135",
+                "time": "3h"
+            },
+            {
+                "name": "Lace Closure Sew-in",
+                "price": "$110",
+                "time": "3h"
+            },
+            {
+                "name": "Flip Over Sew-in",
+                "price": "$160",
+                "time": "3h 30min"
+            }
+        ]
+    },
+    {
+        "category": "Quickweaves",
+        "services": [
+            {
+                "name": "27 Piece Quickweave",
+                "price": "$125",
+                "time": "2h"
+            },
+            {
+                "name": "Lace Closure Quickweave",
+                "price": "$100",
+                "time": "2h 30min"
+            },
+            {
+                "name": "Basic Quickweave",
+                "price": "$65",
+                "time": "1h 30min"
+            }
+        ]
+    },
+    {
+        "category": "Luxury Silk Press",
+        "services": [
+            {
+                "name": "Luxury Silk Press",
+                "price": "$80",
+                "time": "1h"
+            },
+            {
+                "name": "Invisible/Sleek Ponytail",
+                "price": "$100+",
+                "time": "2h"
+            },
+            {
+                "name": "Crimps",
+                "price": "$65",
+                "time": "1h 30min"
+            },
+            {
+                "name": "Fingerwaves",
+                "price": "$50",
+                "time": "1h"
+            },
+            {
+                "name": "Curls",
+                "price": "$50",
+                "time": "45 min"
+            }
+        ]
+    },
+    {
+        "category": "Treatments",
+        "services": [
+            {
+                "name": "Locs Retwist",
+                "price": "$85",
+                "time": "2h"
+            },
+            {
+                "name": "Steam Hydration",
+                "price": "Contact",
+                "time": "30 min"
+            },
+            {
+                "name": "Color Treatments",
+                "price": "Contact",
+                "time": "Varies"
+            }
+        ]
+    }
+]
