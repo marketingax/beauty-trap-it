@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { assetUrl } from '../utils/assetUrl';
 
@@ -45,7 +46,7 @@ const ServiceHighlight = () => {
                             <div className="service-info">
                                 <h3>{service.title}</h3>
                                 <p>{service.desc}</p>
-                                <a href="/services" className="service-link">View Pricing →</a>
+                                <Link to="/services" className="service-link">View Pricing →</Link>
                             </div>
                         </motion.div>
                     ))}

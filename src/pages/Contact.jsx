@@ -59,7 +59,7 @@ const Contact = () => {
                   <div className="icon-box"><Phone size={24} /></div>
                   <div className="info-text">
                     <h3>Phone</h3>
-                    <p>(123) 456-7890</p>
+                    <p><a href="tel:470-256-1213" className="hover-primary">(470) 256-1213</a></p>
                   </div>
                 </li>
                 <li className="info-item">

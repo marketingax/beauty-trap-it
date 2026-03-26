@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { assetUrl } from '../utils/assetUrl';
 
@@ -19,7 +20,7 @@ const Hero = () => {
           </p>
           <div className="hero-btns">
             <a href="https://app.squareup.com/appointments/book/hx5cv4kciodolk/L8EMZEYG272GF/start" target="_blank" rel="noopener noreferrer" className="btn-primary">Book Appointment</a>
-            <a href="/services" className="btn-secondary">View Menu</a>
+            <Link to="/services" className="btn-secondary">View Menu</Link>
           </div>
         </motion.div>
       </div>

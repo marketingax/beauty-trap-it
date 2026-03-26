@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import ServiceHighlight from '../components/ServiceHighlight';
 import { assetUrl } from '../utils/assetUrl';
@@ -18,7 +19,7 @@ const Home = () => {
                                 At Beauty Trap It, our elite team of stylists is dedicated to the art of transformative hair styling. 
                                 We believe that your hair is your crown, and we are here to provide an empowering space where beauty and hustle converge.
                             </p>
-                            <a href="/about" className="btn-primary">Our Story</a>
+                            <Link to="/about" className="btn-primary">Our Story</Link>
                         </div>
                         <div className="teaser-image">
                             <img src={assetUrl('assets/photoshoot/team-teaser.jpg')} alt="The Collective" className="rounded-card" />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { assetUrl } from '../utils/assetUrl';
 
@@ -18,6 +18,17 @@ const Navbar = () => {
         handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isOpen]);
 
     const navLinks = [
         { name: 'Home', path: '/' },
@@ -61,7 +72,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Toggle */}
-                <button className="md-hidden text-white" onClick={toggleMenu} aria-label="Toggle Menu">
+                <button className="md-hidden text-primary" onClick={toggleMenu} aria-label="Toggle Menu">
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </div>
@@ -74,7 +85,7 @@ const Navbar = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="mobile-overlay fixed inset-0 z-40 bg-black/90 backdrop-blur-md"
+                            className="mobile-overlay fixed inset-0 z-[1000] bg-black/95 backdrop-blur-md"
                             onClick={() => setIsOpen(false)}
                         />
                         <motion.div
@@ -82,11 +93,11 @@ const Navbar = () => {
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
                             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                            className="mobile-drawer fixed top-0 right-0 h-full w-4/5 max-w-sm z-50 bg-[#0a0a0a] p-10 flex flex-col border-l border-[var(--glass-border)]"
+                            className="mobile-drawer fixed top-0 right-0 h-full w-4/5 max-w-sm z-[1001] bg-[#0a0a0a] p-10 flex flex-col border-l border-[var(--glass-border)]"
                         >
                             <div className="flex justify-between items-center mb-12">
                                 <img src={assetUrl('assets/logo.png')} alt="Logo" className="h-10 w-auto" />
-                                <button onClick={() => setIsOpen(false)} className="text-white">
+                                <button onClick={() => setIsOpen(false)} className="text-primary">
                                     <X size={32} />
                                 </button>
                             </div>
@@ -111,6 +122,13 @@ const Navbar = () => {
                                 >
                                     Book Appointment
                                 </a>
+                                <a
+                                    href="tel:470-256-1213"
+                                    className="flex items-center justify-center gap-2 text-primary font-serif text-xl border border-primary/20 rounded-lg py-3 mt-2"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    <Phone size={20} /> Call Us
+                                </a>
                             </div>
 
                             <div className="mt-auto pt-10 border-t border-white/5">
@@ -134,14 +152,6 @@ const Navbar = () => {
         }
 
         /* Custom Drawer Styles */
-        .mobile-overlay {
-          background: rgba(0,0,0,0.85);
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-        }
         .mobile-drawer {
           box-shadow: -10px 0 30px rgba(0,0,0,0.5);
         }

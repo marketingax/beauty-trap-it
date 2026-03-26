@@ -60,7 +60,7 @@ const Services = () => {
         </div>
 
         <div className="booking-cta mt-12 text-center">
-          <p className="mb-8 text-muted">Don't see what you're looking for? Contact us for custom inquiries.</p>
+          <p className="mb-8 text-muted">Don't see what you're looking for? <a href="tel:470-256-1213" className="text-primary hover:underline">Call us</a> for custom inquiries.</p>
           <a
             href="https://app.squareup.com/appointments/book/hx5cv4kciodolk/L8EMZEYG272GF/start"
             target="_blank"
