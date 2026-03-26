@@ -85,7 +85,7 @@ const Navbar = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="mobile-overlay fixed inset-0 z-[1000] bg-black/95 backdrop-blur-md"
+                            className="mobile-overlay fixed inset-0 z-[1000] bg-black"
                             onClick={() => setIsOpen(false)}
                         />
                         <motion.div
@@ -93,7 +93,7 @@ const Navbar = () => {
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
                             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                            className="mobile-drawer fixed top-0 right-0 h-full w-4/5 max-w-sm z-[1001] bg-[#0a0a0a] p-10 flex flex-col border-l border-[var(--glass-border)]"
+                            className="mobile-drawer fixed top-0 right-0 h-full w-4/5 max-w-sm z-[1001] bg-[#050505] p-10 flex flex-col border-l border-[var(--glass-border)]"
                         >
                             <div className="flex justify-between items-center mb-12">
                                 <img src={assetUrl('assets/logo.png')} alt="Logo" className="h-10 w-auto" />
