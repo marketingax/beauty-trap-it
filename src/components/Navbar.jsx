@@ -152,12 +152,24 @@ const Navbar = () => {
         }
 
         /* Custom Drawer Styles */
+        .mobile-overlay {
+          background: #000000 !important;
+          opacity: 0.9 !important;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1000;
+        }
         .mobile-drawer {
+          background-color: #0a0a0a !important;
           box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+          opacity: 1 !important;
         }
       `}</style>
-        </nav>
-    );
+    </nav>
+  );
 };
 
 export default Navbar;
