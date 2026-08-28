@@ -59,14 +59,14 @@ const Contact = () => {
                   <div className="icon-box"><Phone size={24} /></div>
                   <div className="info-text">
                     <h3>Phone</h3>
-                    <p><a href="tel:470-256-1213" className="hover-primary">(470) 256-1213</a></p>
+                    <p><a href="tel:678-519-0769" className="hover-primary">(678) 519-0769</a></p>
                   </div>
                 </li>
                 <li className="info-item">
                   <div className="icon-box"><Mail size={24} /></div>
                   <div className="info-text">
                     <h3>Email</h3>
-                    <p>info@beautytrapit.com</p>
+                    <p>beautytrapitllc@gmail.com</p>
                   </div>
                 </li>
               </ul>

@@ -123,7 +123,7 @@ const Navbar = () => {
                                     Book Appointment
                                 </a>
                                 <a
-                                    href="tel:470-256-1213"
+                                    href="tel:678-519-0769"
                                     className="flex items-center justify-center gap-2 text-primary font-serif text-xl border border-primary/20 rounded-lg py-3 mt-2"
                                     onClick={() => setIsOpen(false)}
                                 >

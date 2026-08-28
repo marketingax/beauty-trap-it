@@ -33,8 +33,8 @@ const Footer = () => {
             <h4>Contact Us</h4>
             <ul>
               <li><MapPin size={18} /> 5456 Riverstation Blvd Suite 140 Atlanta GA 30349</li>
-              <li><Phone size={18} /> <a href="tel:470-256-1213" className="hover-primary">(470) 256-1213</a></li>
-              <li><Mail size={18} /> info@beautytrapit.com</li>
+              <li><Phone size={18} /> <a href="tel:678-519-0769" className="hover-primary">(678) 519-0769</a></li>
+              <li><Mail size={18} /> beautytrapitllc@gmail.com</li>
             </ul>
           </div>
 
